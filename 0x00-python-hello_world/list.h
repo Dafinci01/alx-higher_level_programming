@@ -4,7 +4,6 @@
 #include <stdlib.h>
 
 
-/*structure representing a list node fot integers*/
 typedef struct listint_s
 {
 	int n;
