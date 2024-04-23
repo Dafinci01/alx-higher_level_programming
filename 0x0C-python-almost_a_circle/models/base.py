@@ -12,6 +12,10 @@ class Base:
 
     def __init__(self, id=None):
         """class constructor
+        Args:
+            id (int) - id of each model
+        Return:
+            none
         """
         if id is not None:
             self.id = id
