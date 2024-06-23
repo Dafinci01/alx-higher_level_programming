@@ -3,11 +3,14 @@
 const occurrences = Number(process.argv[2]);
 
 if (Number.isNaN(occurrences)) {
-  console.log('Missing number of occurrences');
+  console.log('Missing size');
 } else {
-  let i = 0;
-  while (i < occurrences) {
-    console.log('C is fun');
-    i++;
+  if (occurrences > 0) {
+    let i = 0;
+    const row = 'X'.repeat(occurrences);
+    while (i < occurrences) {
+      console.log(row);
+      i++;
+    }
   }
 }
