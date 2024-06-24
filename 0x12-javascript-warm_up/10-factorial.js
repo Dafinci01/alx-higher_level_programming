@@ -1,12 +1,13 @@
 #!/usr/bin/node
 
-const args = process.argv.slice(2);
+const num = Number(process.argv[2]);
 
-const first = Number(args[0]);
-const second = Number(args[1]);
-
-function add (a, b) {
-  console.log(a + b);
+function factorial (num) {
+  if (Number.isNaN(num) || num === 1) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
+  }
 }
 
-add(first, second);
+console.log(factorial(num));
